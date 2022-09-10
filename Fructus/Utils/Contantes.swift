@@ -6,4 +6,5 @@ enum EIcons: String {
     case info_circle = "info.circle"
     case slider_horizontal_3 = "slider.horizontal.3"
     case apps_iphone = "apps.iphone"
+    case paintbrush = "paintbrush"
 }

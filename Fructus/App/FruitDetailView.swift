@@ -40,7 +40,7 @@ struct FruitDetailView: View {
                 .navigationBarTitleDisplayMode(.inline)
             }
             .edgesIgnoringSafeArea(.top)
-        }
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
