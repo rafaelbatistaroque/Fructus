@@ -20,6 +20,18 @@ struct SettingsView: View {
                                 .font(.footnote)
                         }
                     }
+
+                    GroupBox(label: SettingsLabelView(labelText: "Application", labelImage: EIcons.apps_iphone.rawValue)) {
+                        Divider().padding(.vertical, 4)
+                        SettingsRowView(name: "Developer", content: "Rafael Batista")
+                        SettingsRowView(name: "Designer", content: "Rafael Batista")
+                        SettingsRowView(name: "Compatibility", content: "iOS 15.5")
+                        SettingsRowView(name: "Website", linkLabel: "SwiftUI Masterclass", linkDestination: "swiftuimasterclass.com")
+                        SettingsRowView(name: "LinkedIn", linkLabel: "Rafael Batista", linkDestination: "https://www.linkedin.com/in/rafa-batista/")
+                        SettingsRowView(name: "SwiftUI", content: "5.0")
+                        SettingsRowView(name: "Version", content: "1.0.0")
+
+                    }
                 }
                 .navigationTitle("Settings")
                 .navigationBarTitleDisplayMode(.large)
