@@ -20,6 +20,8 @@ struct FruitDetailView: View {
                             .font(.headline)
                             .multilineTextAlignment(.leading)
 
+                        FruitNutrientsView(fruit: fruit)
+
                         Text("Learn more aboutn\(fruit.title)".uppercased())
                             .fontWeight(.bold)
                             .foregroundColor(fruit.gradientColors[1])
